@@ -1,0 +1,111 @@
+.navbar {
+  margin-bottom: 0;
+  background-color: #f8f8f8;
+  border: none;
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: #333;
+}
+
+.navbar .navbar-toggle .icon-bar {
+  background-color: #333;
+}
+
+.navbar .navbar-toggle:focus,
+.navbar .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-collapse {
+  border-top: 1px solid #ddd;
+}
+
+.navbar-collapse ul.navbar-nav {
+  background-color: #f8f8f8;
+}
+
+.navbar-collapse ul.navbar-nav li a {
+  color: #333;
+  padding-right: 10px; /* Ajout d'un espace entre les éléments */
+  text-align: center;
+}
+
+.navbar-collapse ul.navbar-nav li:not(:last-child) a {
+  border-right: 1px solid #ddd; /* Ajout d'une bordure à droite */
+}
+
+.navbar-collapse ul.navbar-nav li a:hover,
+.navbar-collapse ul.navbar-nav li.active a {
+  background-color: #ddd;
+}
+
+
+#main-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.row #chicken, #beef, #sushi {
+  margin: 5px;
+  width: 32%;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section .col-md-4 {
+  background-color: #9999;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.section h3 {
+  color: #000;
+  margin: 0 0 20px;
+}
+
+
+/*** Large device only ***/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width:1170px;
+  }
+
+}
+
+/*** Small devices only ***/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  } 
+  .section h3{
+    padding-top: 10px;
+  }
+  .row #chicken, #beef, #sushi {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+  }
+
+
+
+}
+
+/*** Extra small devices only ***/
+@media(max-width: 767px) {
+  .container {
+    width: 100%;
+  } 
+  .section h3{
+    padding-top: 10px;
+  }
+  .row #chicken, #beef, #sushi {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+  }
+}
